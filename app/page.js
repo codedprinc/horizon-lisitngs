@@ -1,95 +1,67 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import { TbArrowsSort } from "react-icons/tb";
+import Card from "@/app/components/ui/Card";
+import Navlink from "./components/ui/Navlink";
+
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <>
+      <Navlink></Navlink>
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+      <div className={styles.container}>
+        <section className={styles.hero}>
+          <div className={styles.heroText}>
+            <h4>
+              Post your property for <em>Free</em>
+            </h4>
+            <p>List it on Dallal and get genuine leads</p>
+            <button className={styles.heroBtn}>Post your property</button>
+          </div>
+
+          <div className={styles.heroImg}>
             <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="/home_hand.png"
+              width={100}
+              height={80}
+              alt="house_and_hand"
             />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+          </div>
+        </section>
+      </div>
+
+     
+
+      <div className={styles.container}>
+        <section className={styles.rentSaleSort}>
+          <div className={styles.rentSale} >
+            <button className={styles.rentBtn}>For Rent</button>
+            <button className={styles.saleBtn}>For Sale</button>
+          </div>
+
+          <button className={styles.sortBtn}>
+            <TbArrowsSort />  <span>Sort</span>
+          </button>
+        </section>
+      </div>
+
+     
+
+      <div className={styles.container}>
+        <div className={styles.featuresText}>
+          <h4>Featured Listings</h4>
+          <h5>See All</h5>
+          
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+
+        <section className={styles.cards}>
+          <Card></Card>
+          <Card></Card>
+          <Card></Card>
+        </section>
+      </div>
+
+    </>
   );
 }

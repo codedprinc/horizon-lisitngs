@@ -1,0 +1,54 @@
+@media (min-width: 320px) and (max-width: 767px) {    
+    .Nav{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+        max-width: 760px;
+        width: 100%;
+        padding: 0 16px;
+        
+        
+    
+    }
+    .navList{
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        align-content: center;
+    }
+
+    .navList li .navLinkList{
+        margin: 0;
+    }
+
+    /* .navList li .navLinkList .navLinkBorder{
+        border: 1px solid rgb(192, 188, 188);
+        border-radius: 50%;
+        width: 30%;
+        padding: 10px;
+    } */
+    .navList li .navLinkList .navLink{
+        /* font-size: 1.8em; */
+        font-size: 1.5em;
+        padding: 1px;
+        margin-left: 5px;
+        
+        /* width: 30%; */
+        /* height: 30%; */
+        /* padding-left: 0.4em;
+        padding-right: 0.4em;
+        padding-top: 0.3em;
+        padding-bottom: 0.3em;
+        display: block;
+        */
+    }
+
+    .navList li span{
+        font-size: small;
+    }
+    .navList li:hover{
+        font-size: 1.8em;
+
+
+    }
+}

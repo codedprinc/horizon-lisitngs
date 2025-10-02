@@ -1,167 +1,299 @@
-.page {
-  --gray-rgb: 0, 0, 0;
-  --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
-  --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
-
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
-
-  display: grid;
-  grid-template-rows: 20px 1fr 20px;
-  align-items: center;
-  justify-items: center;
-  min-height: 100svh;
-  padding: 80px;
-  gap: 64px;
-  font-family: var(--font-geist-sans);
-}
-
-@media (prefers-color-scheme: dark) {
-  .page {
-    --gray-rgb: 255, 255, 255;
-    --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
-    --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
-
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-  }
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  grid-row-start: 2;
-}
-
-.main ol {
-  font-family: var(--font-geist-mono);
-  padding-left: 0;
-  margin: 0;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: -0.01em;
-  list-style-position: inside;
-}
-
-.main li:not(:last-of-type) {
-  margin-bottom: 8px;
-}
-
-.main code {
-  font-family: inherit;
-  background: var(--gray-alpha-100);
-  padding: 2px 4px;
-  border-radius: 4px;
-  font-weight: 600;
-}
-
-.ctas {
-  display: flex;
-  gap: 16px;
-}
-
-.ctas a {
-  appearance: none;
-  border-radius: 128px;
-  height: 48px;
-  padding: 0 20px;
-  border: 1px solid transparent;
-  transition:
-    background 0.2s,
-    color 0.2s,
-    border-color 0.2s;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 500;
-}
-
-a.primary {
-  background: var(--foreground);
-  color: var(--background);
-  gap: 8px;
-}
-
-a.secondary {
-  border-color: var(--gray-alpha-200);
-  min-width: 158px;
-}
-
-.footer {
-  grid-row-start: 3;
-  display: flex;
-  gap: 24px;
-}
-
-.footer a {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.footer img {
-  flex-shrink: 0;
-}
-
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  a.primary:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
-  }
-
-  a.secondary:hover {
-    background: var(--button-secondary-hover);
-    border-color: transparent;
-  }
-
-  .footer a:hover {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-  }
-}
-
-@media (max-width: 600px) {
-  .page {
-    padding: 32px;
-    padding-bottom: 80px;
-  }
-
-  .main {
-    align-items: center;
-  }
-
-  .main ol {
-    text-align: center;
-  }
-
-  .ctas {
-    flex-direction: column;
-  }
-
-  .ctas a {
-    font-size: 14px;
-    height: 40px;
+@media (min-width: 320px) and (max-width: 767px) {
+  .container {
+    max-width: 760px;
+    width: 100%;
     padding: 0 16px;
+    margin: 0 auto;
   }
 
-  a.secondary {
-    min-width: auto;
+  section.hero {
+    margin-top: 2.3em;
+    display: flex;
+    justify-content: space-between;
+    color: aliceblue;
+    background-image: linear-gradient(180deg, blue, rgb(250, 240, 240));
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+    padding-right: 1em;
+    padding-left: 1em;
+    margin-bottom: 1.5em;
+    border-radius: 10px;
   }
 
-  .footer {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+  .heroText h4 {
+    margin-bottom: 0.2em;
+  }
+  .heroText p {
+    font-size: smaller;
+    margin-bottom: 1em;
+  }
+  .heroBtn {
+    background-color: white;
+    padding: 10px 20px;
+    margin-left: 3px;
+    border-radius: 20px;
+    border: 1px solid rgb(188, 182, 182);
+    font-weight: bold;
+  }
+
+  /* end of hero section */
+
+  .rentSaleSort {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin: 2em 0;
+  }
+
+  .rentSale {
+    background-color: hsla(240, 55%, 92%, 0.885);
+    padding: 0.2em 1.4em;
+    border-radius: 20px;
+  }
+
+  .rentBtn {
+    margin-left: -1.7em;
+    color: aliceblue;
+    background-color: blue;
+    border-radius: 60px;
+    padding: 0.8em;
+  }
+  .saleBtn {
+    margin-left: 1em;
+    padding: 0.7em;
+    border-radius: 60px;
+    background: none;
+    border: none;
+  }
+
+  .sortBtn {
+    padding: 0.7em 1em;
+    border-radius: 60px;
+  }
+  .sortBtn span {
+    margin-left: 0.5em;
+  }
+
+  /* end of rent and sale buttons */
+
+  .featuresText {
+    margin: .2em 0;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+  }
+
+  .featuresText h5 {
+    margin-top: 4px;
+  }
+
+  .cards {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 16px;
+    /* padding: 16px; */
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+    max-width: 760px;
+    width: 100%;
+    padding: 0 16px;
+    margin: 0 auto;
+  }
+
+  section.hero {
+    margin-top: 2.3em;
+    display: flex;
+    justify-content: space-between;
+    color: aliceblue;
+    background-image: linear-gradient(180deg, blue, rgb(250, 240, 240));
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+    padding-right: 1em;
+    padding-left: 1em;
+    margin-bottom: 1.5em;
+    border-radius: 10px;
+  }
+
+  .heroText h4 {
+    margin-bottom: 0.2em;
+  }
+  .heroText p {
+    font-size: smaller;
+    margin-bottom: 1em;
+  }
+  .heroBtn {
+    background-color: white;
+    padding: 10px 20px;
+    margin-left: 3px;
+    border-radius: 20px;
+    border: 1px solid rgb(188, 182, 182);
+    font-weight: bold;
+  }
+
+  /* end of hero section */
+
+  .rentSaleSort {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin: 2em 0;
+  }
+
+  .rentSale {
+    background-color: hsla(240, 55%, 92%, 0.885);
+    padding: 0.2em 1.4em;
+    border-radius: 20px;
+  }
+
+  .rentBtn {
+    margin-left: -1.7em;
+    color: aliceblue;
+    background-color: blue;
+    border-radius: 60px;
+    padding: 0.8em;
+  }
+  .saleBtn {
+    margin-left: 1em;
+    padding: 0.7em;
+    border-radius: 60px;
+    background: none;
+    border: none;
+  }
+
+  .sortBtn {
+    padding: 0.7em 1em;
+    border-radius: 60px;
+  }
+  .sortBtn span {
+    margin-left: 0.5em;
+  }
+
+  /* end of rent and sale buttons */
+
+  .featuresText {
+    margin: 2em 0;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+  }
+
+  .featuresText h5 {
+    margin-top: 4px;
+  }
+
+  .cards {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 16px;
+    padding: 16px;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  }
+}
+@media (min-width: 1024px) {
+    .container {
+    max-width: 760px;
+    width: 100%;
+    padding: 0 16px;
+    margin: 0 auto;
+  }
+
+  section.hero {
+    margin-top: 2.3em;
+    display: flex;
+    justify-content: space-between;
+    color: aliceblue;
+    background-image: linear-gradient(180deg, blue, rgb(250, 240, 240));
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+    padding-right: 1em;
+    padding-left: 1em;
+    margin-bottom: 1.5em;
+    border-radius: 10px;
+  }
+
+  .heroText h4 {
+    margin-bottom: 0.2em;
+  }
+  .heroText p {
+    font-size: smaller;
+    margin-bottom: 1em;
+  }
+  .heroBtn {
+    background-color: white;
+    padding: 10px 20px;
+    margin-left: 3px;
+    border-radius: 20px;
+    border: 1px solid rgb(188, 182, 182);
+    font-weight: bold;
+  }
+
+  /* end of hero section */
+
+  .rentSaleSort {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin: 2em 0;
+  }
+
+  .rentSale {
+    background-color: hsla(240, 55%, 92%, 0.885);
+    padding: 0.2em 1.4em;
+    border-radius: 20px;
+  }
+
+  .rentBtn {
+    margin-left: -1.7em;
+    color: aliceblue;
+    background-color: blue;
+    border-radius: 60px;
+    padding: 0.8em;
+  }
+  .saleBtn {
+    margin-left: 1em;
+    padding: 0.7em;
+    border-radius: 60px;
+    background: none;
+    border: none;
+  }
+
+  .sortBtn {
+    padding: 0.7em 1em;
+    border-radius: 60px;
+  }
+  .sortBtn span {
+    margin-left: 0.5em;
+  }
+
+  /* end of rent and sale buttons */
+
+  .featuresText {
+    margin: 2em 0;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+  }
+
+  .featuresText h5 {
+    margin-top: 4px;
+  }
+
+  .cards {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 16px;
+    padding: 16px;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
   }
 }

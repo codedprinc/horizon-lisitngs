@@ -1,0 +1,67 @@
+@media (min-width: 320px) and (max-width: 767px) {
+  .container {
+    max-width: 760px;
+    width: 100%;
+    padding: 0 16px;
+    margin-bottom: 80px;
+    margin-top: 20px;
+  }
+
+  .card {
+    /* margin-top: -30px; */
+    width: 300px;
+    height: 150px;
+    position: relative;
+  }
+  .cardImg {
+    width: 100%;
+    height: inherit;
+    border-radius: 20px 20px 0px 0px;
+  }
+  .floatText {
+    position: absolute;
+    color: white;
+    background-color: rgb(15, 0, 225);
+    padding: 4px 8px;
+    border-radius: 50px 50px;
+    top: 10%;
+    left: 5%;
+  }
+  .floatIconPlus {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    background-color: rgb(15, 0, 225);
+    top: 10%;
+    right: 10%;
+    padding: 4px;
+    border-radius: 50px 50px;
+  }
+  .floatIconJustice {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    background-color: rgb(15, 0, 225);
+    top: 40%;
+    right: 10%;
+    /* bottom: 20%; */
+    border-radius: 50px 50px;
+    padding: 4px;
+    /* padding: 1em; */
+  }
+  .floatIconHeart {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    background-color: rgb(15, 0, 225);
+    top: 70%;
+    right: 10%;
+    padding: 4px;
+    border-radius: 50px 50px;
+  }
+
+
+
+  .cardDetails{
+    margin-top: 10px;
+    
+  }
+  
+}
