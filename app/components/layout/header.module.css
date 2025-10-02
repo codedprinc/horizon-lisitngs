@@ -1,90 +1,116 @@
-@media (min-width: 320px) and (max-width: 767px) {
-    .container {
-        max-width: 760px;
-        width: 100%;
-        padding: 0 16px;
-        margin: 0 auto;
-        min-width: 100vw;
-        
-    }
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 1rem;
+  margin: 0 auto;
+  min-width: 100vw;
+}
 
-    .profileBar{
-        margin-top: 20px;
-        display: flex;
-        justify-content: space-between;
-        align-content: center;
-    }
+.profileBar {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  /* border: 1px solid greenyellow; */
+}
 
-    .profilePT{
-        display: flex;
+.profilePT {
+  display: flex;
+}
 
-    }
-    /* .profileImg{ */
-        /* border:1px solid red */
-        
-    /* } */
-    .Img{
-        border-radius: 100px;
-    }
+.Img {
+  border-radius: 50px 50px;
+  height: 70%;
+}
 
-    .profileText{
-        padding-left: 10px;
-    }
-    .profileText h5{
-        padding-top: 1px;
-        padding-bottom: 0;
-    }
-    .profileText h3{
-        padding: 0;
-        margin-top: -15px;
-    }
+.profileText {
+  padding-left: 10px;
+}
 
-    .bell{
-        border: 1px solid rgb(140, 140, 143);
-        background-color: rgb(245, 242, 242);
-        border-radius: 140px;
-        height: fit-content;
-        width: fit-content;
-        padding: 3px;
-        margin-top: 7px;
-    }
+.profileText h5 {
+  padding-top: 1px;
+  padding-bottom: 0;
+}
+.profileText h3 {
+  padding: 0;
+  margin-top: -15px;
+}
 
-    .searchBar{
-        margin-top: 1.2em;
-    }
+.bell {
+  border: 1px solid rgb(140, 140, 143);
+  background-color: rgb(245, 242, 242);
+  border-radius: 140px;
+  height: fit-content;
+  width: fit-content;
+  padding: 3px;
+  margin-top: 7px;
+}
 
-    .search {
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-        
-    }
-    .searchIcon  {
-        position: absolute;
-        left: 3%;
-        top: 24%;
+.searchBar {
+  /* margin-top: 1em; */
+}
 
-    }
-    .searchBar input[type="text"]{
-        width: 80vw;
-        /* padding: 0.7em; */
-        padding-top: 0.7em;
-        padding-bottom: 0.7em;
-        padding-left: 0.4em;
-        border-radius: 10px;
+.search {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.searchIcon {
+  position: absolute;
+  left: 3%;
+  top: 24%;
+}
+.searchBar input[type="text"] {
+  width: 80vw;
+  /* padding: 0.7em; */
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+  padding-left: 0.4em;
+  border-radius: 10px;
+}
+.settingIcon {
+  border: 3px solid rgb(249, 249, 249);
+  margin-top: -4px;
+  color: rgb(255, 255, 255);
+  background-color: blue;
+  padding: 0.5em;
+  border-radius: 10px;
+}
 
-    }
-    .settingIcon{
-        border: 3px solid rgb(249, 249, 249);
-        margin-top: -4px;
-        color: rgb(255, 255, 255);
-        background-color: blue;
-        padding: 0.5em;
-        border-radius: 10px;
+@media (max-width: 375px) {
+  .container {
+    max-width: 375px;
+    min-width: 320px;
+  }
 
-    }
+  .profileBar {
+    margin-top: 1.3rem;
+  }
 
+  .profileText {
+    margin-top: 0.2rem;
+  }
+  .profileText h5 {
+    font-size: small;
+  }
+  .profileText h3 {
+    font-size: 1rem;
+  }
 
-    
+  .searchIcon {
+    position: absolute;
+    left: 3%;
+    top: 20%;
+  }
 
+  .searchBar input[type="text"] {
+    width: 77vw;
+    padding-left: 0em;
+    border-radius: 10px;
+    font-size: 0.7rem;
+  }
+
+  .settingIcon {
+    font-size: 0.7rem;
+    margin-top: -0.2rem;
+  }
 }
