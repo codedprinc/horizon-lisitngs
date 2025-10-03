@@ -10,6 +10,7 @@
   display: flex;
   justify-content: space-between;
   align-content: center;
+  margin-top: 1rem;
   /* border: 1px solid greenyellow; */
 }
 
@@ -18,12 +19,12 @@
 }
 
 .Img {
-  border-radius: 50px 50px;
+  border-radius: 1.3rem 1.3rem;
   height: 70%;
 }
 
 .profileText {
-  padding-left: 10px;
+  padding-left: 0.7rem;
 }
 
 .profileText h5 {
@@ -58,22 +59,27 @@
   position: absolute;
   left: 3%;
   top: 24%;
+  
 }
 .searchBar input[type="text"] {
-  width: 80vw;
+  width: 79vw;
   /* padding: 0.7em; */
+font-size: 0.7rem;
   padding-top: 0.7em;
   padding-bottom: 0.7em;
   padding-left: 0.4em;
   border-radius: 10px;
 }
 .settingIcon {
-  border: 3px solid rgb(249, 249, 249);
+  border: 3px solid blue;
   margin-top: -4px;
   color: rgb(255, 255, 255);
   background-color: blue;
-  padding: 0.5em;
+  padding: 0.4em;
   border-radius: 10px;
+  font-size: 0.7rem;
+  margin-top: -0.2rem;
+  outline: none;
 }
 
 @media (max-width: 375px) {
@@ -112,5 +118,11 @@
   .settingIcon {
     font-size: 0.7rem;
     margin-top: -0.2rem;
+    outline: none;
   }
+}
+
+
+@media (min-width: 768px) {
+
 }

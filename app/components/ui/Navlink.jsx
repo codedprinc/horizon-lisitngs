@@ -12,34 +12,32 @@ const Navlink = () => {
       <ul className={styles.navList}>
         <li>
           <div className={styles.navLinkList}>
-            <div className={styles.navLinkBorder}>
-              <BiHome className={styles.navLink} />
-            </div>
-            <span>Residential</span>
+              <BiHome className={styles.navLink1} />
+            <span className={styles.resTxt}>Residential</span>
           </div>
         </li>
         <li>
           <div className={styles.navLinkList}>
-            <FaRegBuilding className={styles.navLink}/><br />
-            <span>Industrial</span>
+            <FaRegBuilding className={styles.navLink2}/>
+            <span className={styles.indTxt}>Industrial</span>
           </div>
         </li>
         <li>
           <div className={styles.navLinkList}>
-            <PiBuildings className={styles.navLink}/><br />
-            <span>Commercial</span>
+            <PiBuildings className={styles.navLink3}/>
+            <span className={styles.commTxt}>Commercial</span>
           </div>
         </li>
         <li>
           <div className={styles.navLinkList}>
-            <PiBarn className={styles.navLink}/><br />
-            <span>Agricultural</span>
+            <PiBarn className={styles.navLink4}/>
+            <span className={styles.agriTxt}>Agricultural</span>
           </div>
         </li>
         <li>
           <div className={styles.navLinkList}>
-            <PiIsland className={styles.navLink}/><br />
-            <span>  Land</span>
+            <PiIsland className={styles.navLink5}/>
+            <span className={styles.landTxt}>Land</span>
           </div>
         </li>
       </ul>
