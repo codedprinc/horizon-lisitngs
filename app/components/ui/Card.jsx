@@ -14,7 +14,7 @@ const Card = () => {
       <div id="card" className={styles.container}>
         <div id="card-img" className={styles.card}>
           <Image
-            src="/hotel_1.jpg"
+            src="/hotel_2.jpg"
             alt="hotel_image"
             width={100}
             height={100}
