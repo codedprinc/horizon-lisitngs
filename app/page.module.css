@@ -128,7 +128,9 @@ section.hero {
   }
 
   .heroImg {
-    margin-top: 2.3rem;
+    margin-top: 4rem;
+    width: 50%;
+    height: 50%;
   }
 
   .rentSale {

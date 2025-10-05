@@ -22,9 +22,9 @@ export default function Home() {
 
           <div className={styles.heroImg}>
             <Image
-              src="/home_hand.png"
+              src="/hand_home.png"
               width={100}
-              height={80}
+              height={100}
               alt="house_and_hand"
             />
           </div>
