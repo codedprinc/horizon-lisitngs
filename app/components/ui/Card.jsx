@@ -48,7 +48,7 @@ const Card = (props) => {
             </p>
             <p >
               <small className={styles.pLocation}>
-                <IoBedOutline /> Bedroom {props.bed}
+                <IoBedOutline /> Bedroom {props.beds}
               </small>
             </p>
             <p>
