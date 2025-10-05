@@ -8,13 +8,13 @@ import { IoBedOutline } from "react-icons/io5";
 import { AiOutlineFullscreen } from "react-icons/ai";
 import Image from "next/image";
 
-const Card = () => {
+const Card = (props) => {
   return (
     <div>
       <div id="card" className={styles.container}>
         <div id="card-img" className={styles.card}>
           <Image
-            src="/hotel_2.jpg"
+            src={props.src}
             alt="hotel_image"
             width={100}
             height={100}
@@ -22,7 +22,7 @@ const Card = () => {
           />
 
           <div >
-            <span className={styles.floatText}>1 year old</span>
+            <span className={styles.floatText}>{props.age} year old</span>
           </div>
           <div>
             <span className={styles.floatIconPlus}>
@@ -39,21 +39,21 @@ const Card = () => {
         <div id="card-details" className={styles.cardDetails}>
           <div id="col-1">
             <h4 className={styles.cardDetailsH4}>
-              <small>KD </small>1,850 /month
+              <small>KD </small>{props.price} /month
             </h4>
             <p>
               <small  className={styles.pLocation}>
-                <CiLocationOn />Block A , Al Barsha 1
+                <CiLocationOn />Block {props.block} , Al Barsha 1
               </small>
             </p>
             <p >
               <small className={styles.pLocation}>
-                <IoBedOutline /> Bedroom 2
+                <IoBedOutline /> Bedroom {props.bed}
               </small>
             </p>
             <p>
               <small className={styles.pLocation}>
-                <AiOutlineFullscreen /> Built-up area 100sq m<sub className={styles.sub}>3</sub>
+                <AiOutlineFullscreen /> Built-up area {props.area}sq m<sub className={styles.sub}>3</sub>
               </small>
             </p>
           </div>
