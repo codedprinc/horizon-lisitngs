@@ -39,19 +39,21 @@ const Card = () => {
         <div id="card-details" className={styles.cardDetails}>
           <div id="col-1">
             <h4 className={styles.cardDetailsH4}>
-              <small>KD</small>1,850 /month
+              <small>KD </small>1,850 /month
             </h4>
             <p>
-              <CiLocationOn /> Block A Al Barsha 1
+              <small  className={styles.pLocation}>
+                <CiLocationOn />Block A , Al Barsha 1
+              </small>
             </p>
-            <p>
-              <small>
+            <p >
+              <small className={styles.pLocation}>
                 <IoBedOutline /> Bedroom 2
               </small>
             </p>
             <p>
-              <small>
-                <AiOutlineFullscreen /> Built-up area 100sq m<sup>3</sup>
+              <small className={styles.pLocation}>
+                <AiOutlineFullscreen /> Built-up area 100sq m<sub className={styles.sub}>3</sub>
               </small>
             </p>
           </div>

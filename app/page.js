@@ -41,7 +41,8 @@ export default function Home() {
           </div>
 
           <button className={styles.sortBtn}>
-            <TbArrowsSort />  <span>Sort</span>
+            <TbArrowsSort />  
+            <span>Sort</span>
           </button>
         </section>
       </div>
@@ -56,6 +57,12 @@ export default function Home() {
         </div>
 
         <section className={styles.cards}>
+          <Card></Card>
+          <Card></Card>
+          <Card></Card>
+          <Card></Card>
+          <Card></Card>
+          <Card></Card>
           <Card></Card>
           <Card></Card>
           <Card></Card>

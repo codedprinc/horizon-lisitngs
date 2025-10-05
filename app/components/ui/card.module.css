@@ -1,67 +1,119 @@
-@media (min-width: 320px) and (max-width: 767px) {
+.container {
+  max-width: 760px;
+  width: 100%;
+  padding: 0 16px;
+  margin-bottom: 5rem;
+  margin-top: 20px;
+}
+
+.card {
+  /* margin-top: -30px; */
+  width: 300px;
+  height: 150px;
+  position: relative;
+}
+.cardImg {
+  width: 100%;
+  height: inherit;
+  border-radius: 20px 20px 0px 0px;
+}
+.floatText {
+  font-size: 0.9rem;
+  position: absolute;
+  color: white;
+  background-color: rgba(84, 82, 109, 0.647);
+  padding: 4px 8px;
+  border-radius: 50px 50px;
+  top: 10%;
+  left: 5%;
+}
+.floatIconPlus {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  background-color: rgba(84, 82, 109, 0.647);
+  top: 10%;
+  right: 5%;
+  padding: 4px;
+  border-radius: 50px 50px;
+}
+.floatIconJustice {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  background-color: rgba(84, 82, 109, 0.647);
+  top: 40%;
+  right: 5%;
+  /* bottom: 20%; */
+  border-radius: 50px 50px;
+  padding: 4px;
+  /* padding: 1em; */
+}
+.floatIconHeart {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  background-color: rgba(84, 82, 109, 0.647);
+  top: 70%;
+  right: 5%;
+  padding: 4px;
+  border-radius: 50px 50px;
+}
+
+.cardDetails {
+  margin-top: 0.6rem;
+}
+
+.cardDetailsH4 {
+  margin-bottom: 0.6rem;
+}
+
+.pLocation {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 0.6rem;
+}
+
+.sub{
+  font-size: 75%; /* Adjust as needed */
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  bottom: -0.25em;
+  margin-left: -.6rem;
+}
+
+/* sup {
+  top: -0.5em; /* Adjust for desired superscript position */
+
+
+.sub {
+   /* Adjust for desired subscript position */
+}
+
+@media (max-width: 375px) {
   .container {
-    max-width: 760px;
-    width: 100%;
-    padding: 0 16px;
-    margin-bottom: 80px;
-    margin-top: 20px;
+    max-width: 375px;
   }
 
   .card {
     /* margin-top: -30px; */
-    width: 300px;
+    width: 16rem;
     height: 150px;
     position: relative;
   }
-  .cardImg {
-    width: 100%;
-    height: inherit;
-    border-radius: 20px 20px 0px 0px;
-  }
+
   .floatText {
-    position: absolute;
-    color: white;
-    background-color: rgb(15, 0, 225);
-    padding: 4px 8px;
-    border-radius: 50px 50px;
-    top: 10%;
-    left: 5%;
+    font-size: 0.7rem;
   }
+
   .floatIconPlus {
-    position: absolute;
-    color: rgb(255, 255, 255);
-    background-color: rgb(15, 0, 225);
     top: 10%;
-    right: 10%;
-    padding: 4px;
-    border-radius: 50px 50px;
-  }
-  .floatIconJustice {
-    position: absolute;
-    color: rgb(255, 255, 255);
-    background-color: rgb(15, 0, 225);
-    top: 40%;
-    right: 10%;
-    /* bottom: 20%; */
-    border-radius: 50px 50px;
-    padding: 4px;
-    /* padding: 1em; */
-  }
-  .floatIconHeart {
-    position: absolute;
-    color: rgb(255, 255, 255);
-    background-color: rgb(15, 0, 225);
-    top: 70%;
-    right: 10%;
-    padding: 4px;
-    border-radius: 50px 50px;
+    right: 5%;
   }
 
-
-
-  .cardDetails{
-    margin-top: 10px;
-    
+  .pLocation {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-bottom: 0.6rem;
   }
-  
 }

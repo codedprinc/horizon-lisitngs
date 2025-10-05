@@ -1,7 +1,7 @@
 .container {
   max-width: 1200px;
   width: 100%;
-  padding: 0 1rem;
+  padding: 0 1em;
   margin: 0 auto;
   min-width: 100vw;
 }
@@ -43,12 +43,10 @@
   height: fit-content;
   width: fit-content;
   padding: 3px;
-  margin-top: 7px;
+  margin-top: .7rem;
+  margin-left: -2rem;
 }
 
-.searchBar {
-  /* margin-top: 1em; */
-}
 
 .search {
   display: flex;
@@ -64,7 +62,7 @@
 .searchBar input[type="text"] {
   width: 79vw;
   /* padding: 0.7em; */
-font-size: 0.7rem;
+  font-size: 0.7rem;
   padding-top: 0.7em;
   padding-bottom: 0.7em;
   padding-left: 0.4em;

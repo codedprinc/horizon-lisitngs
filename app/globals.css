@@ -78,7 +78,9 @@ body {
   overflow-x: hidden;
   width: 100%;
   font-family:Arial, Helvetica, sans-serif;
-  background-color: rgb(219, 229, 249);
+  background-color: rgb(240, 244, 252);
+  max-width: 1200px;
+  margin: 0 auto;
 
 }
 
@@ -95,7 +97,7 @@ img, picture, video, canvas, svg {
 }
 
 /* Remove default form styling issues */
-input, button, textarea, select {
+input, textarea, select {
   font: inherit;
 }
 
@@ -116,7 +118,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 /* Utility classes you can use anywhere */
-.container {
+/* .container {
   max-width: var(--container-max-width);
   margin: 0 auto;
   padding: 0 var(--container-padding);
@@ -139,7 +141,7 @@ p, h1, h2, h3, h4, h5, h6 {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-}
+} */
 
 /* div {
   /* color: rgb(205, 38, 38); 
